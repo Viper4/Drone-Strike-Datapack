@@ -1,0 +1,22 @@
+{
+	"description": "All entities that aren't alive",
+	"values": [
+		"#minecraft:impact_projectiles",
+		"minecraft:armor_stand",
+		"minecraft:item",
+		"minecraft:minecart",
+		"minecraft:hopper_minecart",
+		"minecraft:chest_minecart",
+		"minecraft:furnace_minecart",
+		"minecraft:command_block_minecart",
+		"minecraft:boat",
+		"minecraft:falling_block",
+		"minecraft:area_effect_cloud",
+		"minecraft:lightning_bolt",
+		"minecraft:tnt",
+		"minecraft:end_crystal",
+		"minecraft:glow_item_frame",
+		"minecraft:item_frame",
+		"minecraft:experience_orb"
+	]
+}

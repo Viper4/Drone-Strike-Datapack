@@ -1,0 +1,25 @@
+{
+	"description": "All gasses and liquids that can be passed through",
+	"values": [
+		"minecraft:air",
+		"minecraft:cave_air",
+		"minecraft:void_air",
+		"minecraft:short_grass",
+		"minecraft:tall_grass",
+		"minecraft:sugar_cane",
+		"minecraft:water",
+		"minecraft:lava",
+		"minecraft:snow",
+		"minecraft:wall_torch",
+		"#minecraft:flowers",
+		"#minecraft:saplings",
+		"#minecraft:doors",
+		"#minecraft:trapdoors",
+		"#minecraft:climbable",
+		"#minecraft:wool_carpets",
+		"#minecraft:rails",
+		"#minecraft:bee_growables",
+		"#minecraft:wall_post_override",
+		"#minecraft:fire"
+	]
+}
