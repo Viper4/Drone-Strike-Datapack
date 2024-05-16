@@ -1,4 +1,4 @@
-execute if entity @s[tag=!gas] run summon arrow ~ ~30 ~ {Owner:[I;0,0,0,0],PierceLevel:99,damage:0.8d,Motion:[0d,-10d,0d],Tags:["droneStrike","16","17","gas"],CustomNameVisible:1b,CustomName:'[{"text":"[","color":"white"},{"text":"Drone Strike","color":"yellow"},{"text":"] ","color":"white"},{"text":"Neutron Bomb","color":"dark_green"}]'}
+execute if entity @s[tag=!gas] run summon arrow ~ ~30 ~ {Owner:[I;0,0,0,0],PierceLevel:99,damage:0.8d,Motion:[0d,-10d,0d],Tags:["droneStrike","16","17","gas"],CustomNameVisible:1b,CustomName:'[{"text":"[","color":"white"},{"text":"Drone Strike","color":"yellow"},{"text":"] ","color":"white"},{"text":"Nuke","color":"black"}]'}
 
 #Nuke explosion 1st layer
 execute if entity @s[tag=gas] run summon fireball ~ ~ ~ {Motion:[0d,-6d,0d],Tags:["nuke"],ExplosionPower:80}

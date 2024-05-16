@@ -98,6 +98,11 @@ scoreboard players set @a[scores={ds_deaths=1..}] ds_deaths 0
 scoreboard players set @e[type=!#drone_strike:inanimate,tag=!radiation,tag=!droneStrike,scores={ds_timer=1..}] ds_timer 0
 scoreboard players set @e[type=!#drone_strike:inanimate,tag=!bioweapon,tag=!droneStrike,scores={ds_killTimer=1..}] ds_killTimer 0
 
+#Enderman
+execute as @e[type=arrow,tag=droneStrike,tag=19,tag=inEntity] at @s run function drone_strike:main/strike_type/19
+execute as @e[type=arrow,tag=droneStrike,tag=19,tag=inEntity] run kill @s
+execute as @e[type=arrow,tag=droneStrike,tag=19,nbt={inGround:1b}] at @s run function drone_strike:main/strike_type/19
+
 #Bioweapon info
 execute if entity @a[team=ds_bw] run function drone_strike:main/bw_info
 

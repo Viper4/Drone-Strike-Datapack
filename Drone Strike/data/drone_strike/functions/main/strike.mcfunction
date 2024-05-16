@@ -38,6 +38,10 @@ execute if entity @s[tag=14,scores={ds_timer=120..}] run function drone_strike:m
 execute if entity @s[tag=15,scores={ds_timer=120..}] run function drone_strike:main/strike_type/15
 execute if entity @s[tag=16,scores={ds_timer=120..}] run function drone_strike:main/strike_type/16
 execute if entity @s[tag=17,scores={ds_timer=120..}] run function drone_strike:main/strike_type/17
+execute if entity @s[tag=18,scores={ds_timer=120..}] run function drone_strike:main/strike_type/18
+execute if entity @s[tag=19,scores={ds_timer=120..}] run function drone_strike:main/strike_type/19
+execute if entity @s[tag=20,scores={ds_timer=120..}] run function drone_strike:main/strike_type/20
+
 #Saving armor_stand's Owner UUID to arrow Owner nbt
 execute if score @s ds_timer matches 120.. positioned ~ ~20 ~ store result entity @e[tag=droneStrike,limit=1,sort=nearest] Owner[0] int 1 run scoreboard players get @s ds_UUID0
 execute if score @s ds_timer matches 120.. positioned ~ ~20 ~ store result entity @e[tag=droneStrike,limit=1,sort=nearest] Owner[1] int 1 run scoreboard players get @s ds_UUID1

@@ -1,12 +1,12 @@
 #First setting player's ds_strikeType to the type of their carrot_on_a_stick in case they have multiple carrot on a sticks
 execute store result score @p[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ds:1b}}}] ds_strikeType run data get entity @p SelectedItem.tag.strike_type 
 
-#Adding 1 to player's ds_strikeType and setting !DarkAccess players with ds_strikeType >=18 back to 0
+#Adding 1 to player's ds_strikeType and setting !DarkAccess players with ds_strikeType >=max back to 0
 scoreboard players add @p[distance=..1] ds_strikeType 1
 scoreboard players add @a[tag=!DarkAccess,scores={ds_strikeType=12}] ds_strikeType 1
 scoreboard players add @a[tag=!DarkAccess,scores={ds_strikeType=16}] ds_strikeType 1
 scoreboard players add @a[tag=!DarkAccess,scores={ds_strikeType=17}] ds_strikeType 1
-scoreboard players set @a[scores={ds_strikeType=18..}] ds_strikeType 1
+scoreboard players set @a[scores={ds_strikeType=21..}] ds_strikeType 1
 
 #Telling the player what type was selected and actually changing the carrot_on_a_stick
 tellraw @p [{"text":"Set Drone Strike type to ","color":"gray"},{"score":{"name":"@p","objective":"ds_strikeType"},"color":"white"}]
@@ -27,3 +27,6 @@ item replace entity @p[scores={ds_strikeType=14,ds_rightClick=1..},nbt={Selected
 item replace entity @p[scores={ds_strikeType=15,ds_rightClick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ds:1b}}},distance=..1] weapon.mainhand with minecraft:carrot_on_a_stick{ds:1b,strike_type:15,CustomModelData:15}
 item replace entity @p[scores={ds_strikeType=16,ds_rightClick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ds:1b}}},distance=..1] weapon.mainhand with minecraft:carrot_on_a_stick{ds:1b,strike_type:16,CustomModelData:16}
 item replace entity @p[scores={ds_strikeType=17,ds_rightClick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ds:1b}}},distance=..1] weapon.mainhand with minecraft:carrot_on_a_stick{ds:1b,strike_type:17,CustomModelData:17}
+item replace entity @p[scores={ds_strikeType=18,ds_rightClick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ds:1b}}},distance=..1] weapon.mainhand with minecraft:carrot_on_a_stick{ds:1b,strike_type:18,CustomModelData:18}
+item replace entity @p[scores={ds_strikeType=19,ds_rightClick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ds:1b}}},distance=..1] weapon.mainhand with minecraft:carrot_on_a_stick{ds:1b,strike_type:19,CustomModelData:19}
+item replace entity @p[scores={ds_strikeType=20,ds_rightClick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ds:1b}}},distance=..1] weapon.mainhand with minecraft:carrot_on_a_stick{ds:1b,strike_type:20,CustomModelData:20}
